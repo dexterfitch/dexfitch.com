@@ -1,0 +1,35 @@
+{
+  "name": "Dex Fitch Portfolio",
+  "short_name": "Dex Fitch",
+  "description": "A portfolio showcasing the projects, works, and skills of Dex Fitch.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logos/favicon.ico",
+      "sizes": "32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logos/favicon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "logos/192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logos/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "lang": "en-US",
+  "scope": "/",
+  "categories": ["portfolio", "personal", "web development", "web design", "programming", "coding", "projects", "works", "skills", "Dex Fitch"]
+}

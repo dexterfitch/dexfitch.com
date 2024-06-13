@@ -1,0 +1,9 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}dexfitch.com admin{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+{% endblock %}

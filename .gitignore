@@ -1,0 +1,112 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff
+*.log
+local_settings.py
+db.sqlite3
+
+# Docker stuff
+docker-compose*.yml
+Dockerfile
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+build/
+dist/
+
+# NPM Debug log
+npm-debug.log*
+
+# Yarn
+.yarn/
+.pnp.*
+.yarnrc.yml
+.pnp.js
+
+# React Native specific
+*.expo/
+.expo-shared/
+
+# Mac OS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Pytest cache
+.pytest_cache/
+
+# Django migrations
+**/migrations/**
+
+# Django static files
+staticfiles/
+media/
+
+# Coverage reports
+htmlcov/
+.tox/
+.coverage
+coverage/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# MySQL database dumps
+*.sql
+
+# VS Code specific
+.vscode/
+*.code-workspace
+
+# Ignore IntelliJ project files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local dev environment specific files
+.vagrant/
+
+# Ignore log files
+*.log
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
