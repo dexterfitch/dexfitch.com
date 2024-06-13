@@ -5,23 +5,23 @@ function NavLinks() {
 
     return (
         <>
-            <LinkContainer to="/">
-                <Nav.Link>Home</Nav.Link>
-            </LinkContainer>
             <LinkContainer to="/web">
-                <Nav.Link>Web Development</Nav.Link>
+                <Nav.Link>Web</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/grafx">
-                <Nav.Link>Graphic Design</Nav.Link>
+            <LinkContainer to="/videos">
+                <Nav.Link>Videos</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/drawing">
-                <Nav.Link>Drawing</Nav.Link>
+            <LinkContainer to="/graphics">
+                <Nav.Link>Graphics</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/drawings">
+                <Nav.Link>Drawings</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/animations">
+                <Nav.Link>Animations</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/writing">
                 <Nav.Link>Writing</Nav.Link>
-            </LinkContainer>
-            <LinkContainer to="/craft">
-                <Nav.Link>Craft</Nav.Link>
             </LinkContainer>
         </>
     );

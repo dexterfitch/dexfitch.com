@@ -5,10 +5,10 @@ class UserProfile(models.Model):
     bio = models.TextField()
     profile_image = models.ImageField(upload_to='profile/')
     email = models.EmailField()
-    phone = models.CharField(max_length=20, blank=True)
     linkedin = models.URLField(blank=True)
     github = models.URLField(blank=True)
-    website = models.URLField(blank=True)
+    youtube = models.URLField(blank=True)
+    instagram = models.URLField(blank=True)
 
     def __str__(self):
         return self.name
@@ -19,7 +19,6 @@ class UserProfile(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
@@ -30,7 +29,6 @@ class Category(models.Model):
 
 class Skill(models.Model):
     name = models.CharField(max_length=100)
-    description = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
