@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import TopBuffer from "./Utilities/TopBuffer";
 import TopNav from "./Nav/TopNav";
 import NotFound from "./NotFound";
 import Home from "./Home";
@@ -16,8 +17,9 @@ import Animations from "./Views/Animations";
 function App() {
     return (
         <Container className="p-0" fluid>
+            <TopBuffer />
             <TopNav />
-            <Row id="main">
+            <Row className="py-4" id="main">
                 <Col>
                     <Routes>
                         <Route path="/" element={<Home />} />

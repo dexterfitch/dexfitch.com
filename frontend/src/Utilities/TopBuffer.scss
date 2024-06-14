@@ -1,0 +1,13 @@
+@import "../breakpoints";
+
+@media (max-width: $sm-max) {
+    .top-buffer {
+        padding: 28px;
+    }
+}
+
+@media (min-width: $md-min) {
+    .top-buffer {
+        padding: 53px;
+    }
+}

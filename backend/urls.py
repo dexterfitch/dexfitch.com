@@ -1,3 +1,5 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, re_path
 from django.shortcuts import render
@@ -18,5 +20,4 @@ urlpatterns = [
     path('api/project/<int:project_id>/', ProjectDetailView.as_view()),
     path('api/media/', MediaListView.as_view()),
     path('api/project_media/<int:project_id>/', ProjectMediaView.as_view()),
-    re_path(r'^.*$', lambda request: render(request, 'index.html')),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
