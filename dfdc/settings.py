@@ -16,7 +16,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True 
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'dexfitch.com', 'www.dexfitch.com']
 
@@ -81,9 +81,12 @@ DATABASES = {
         'USER': env('DATABASE_USER'),
         'PASSWORD': env('DATABASE_PASSWORD'),
         'HOST': env('DATABASE_HOST'),
-        'PORT': '3306',
+        'PORT': env('DATABASE_PORT'),
         'TEST': {
             'NAME': env('DATABASE_TEST_NAME'),
+        },
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
         },
     }
 }
@@ -119,9 +122,6 @@ STATICFILES_DIRS = [BASE_DIR / 'backend' / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-
 
 # ==============================================================================
 # Notes For Production
