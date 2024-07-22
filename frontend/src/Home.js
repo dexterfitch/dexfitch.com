@@ -1,10 +1,16 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Home() {
     return (
-        <>
-            <h1>Home.js</h1>
-        </>
+        <Container>
+            <Row>
+                <Col md={12} className="p-0">
+                <h1>Home.js</h1>
+                <p>Welcome to the portfolio and project gallery of me, Dex!</p>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 
